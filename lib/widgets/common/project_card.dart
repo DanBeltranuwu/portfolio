@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../models/portfolio_models.dart';
 import '../../theme/palette.dart';
 import '../../theme/typography.dart';
+import '../../utils/launch_external.dart';
 import 'tag_chip.dart';
 
 class ProjectCard extends StatelessWidget {
@@ -122,6 +123,36 @@ class ProjectCard extends StatelessWidget {
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: PortfolioPalette.muted,
                     height: 1.6,
+                  ),
+                ),
+                const SizedBox(height: 14),
+                InkWell(
+                  onTap: () => launchExternalUri(
+                    context,
+                    Uri.parse(project.externalUrl),
+                  ),
+                  borderRadius: BorderRadius.circular(10),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 4),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            project.linkLabel,
+                            style: portfolioMono(
+                              color: project.accentStrong,
+                              size: 12,
+                              weight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                        Icon(
+                          Icons.arrow_outward,
+                          size: 18,
+                          color: project.accentStrong,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],

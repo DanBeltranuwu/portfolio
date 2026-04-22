@@ -15,6 +15,8 @@ class ProjectHighlight {
     required this.tags,
     required this.accent,
     required this.accentStrong,
+    required this.externalUrl,
+    required this.linkLabel,
   });
 
   final String company;
@@ -23,6 +25,12 @@ class ProjectHighlight {
   final List<String> tags;
   final Color accent;
   final Color accentStrong;
+
+  /// HTTPS URL for the related product or company site.
+  final String externalUrl;
+
+  /// Short label shown on the card link (keep short for layout).
+  final String linkLabel;
 }
 
 class SkillGroup {

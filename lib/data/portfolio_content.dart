@@ -20,6 +20,8 @@ abstract final class PortfolioContent {
       tags: ['Flutter', 'GraphQL', 'Biometrics'],
       accent: PortfolioPalette.blueSoft,
       accentStrong: PortfolioPalette.blue,
+      externalUrl: 'https://www.akaunt.io/',
+      linkLabel: 'akaunt.io',
     ),
     ProjectHighlight(
       company: 'Tyba',
@@ -30,6 +32,8 @@ abstract final class PortfolioContent {
       tags: ['Flutter', 'Riverpod', 'Testing'],
       accent: PortfolioPalette.tealSoft,
       accentStrong: PortfolioPalette.teal,
+      externalUrl: 'https://tyba.com.co/',
+      linkLabel: 'tyba.com.co',
     ),
     ProjectHighlight(
       company: 'Tecnoevolucion',
@@ -40,6 +44,8 @@ abstract final class PortfolioContent {
       tags: ['Flutter', 'Firebase', 'REST'],
       accent: PortfolioPalette.coralSoft,
       accentStrong: PortfolioPalette.coral,
+      externalUrl: 'https://tecnoevolucion.com.co/',
+      linkLabel: 'tecnoevolucion.com.co',
     ),
   ];
 
