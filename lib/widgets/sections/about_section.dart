@@ -126,7 +126,7 @@ class AboutSection extends StatelessWidget {
                 SizedBox(height: 12),
                 InfoCard(
                   title: 'Languages',
-                  value: 'Spanish native · English B2',
+                  value: 'Spanish native · English C1',
                   body:
                       'Comfortable collaborating with international product, '
                       'design, and engineering stakeholders.',
